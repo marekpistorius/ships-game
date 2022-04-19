@@ -1,2 +1,2 @@
 # ships-game
-ships-game
+Ships game

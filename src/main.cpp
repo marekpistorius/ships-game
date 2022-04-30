@@ -22,8 +22,8 @@ int main(int argc, char* argv)
 	
 	Item it = new Item(in , in2);
 
-	auto fIt = maps.find(it);
-	if(!fIt.end()) {
+	auto fIt = std::find(items.begin(), items.end() , it);
+	if(fIt != items.end() ) {
 			printf("Target %d destroyed\n", in );	
 	}		
 	return ret;

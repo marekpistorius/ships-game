@@ -14,13 +14,14 @@ int main(int argc, char* argv)
 {
 	vector<Item> items;
 	int ret = 0;
-	int in, in2;
+	int x, y;
 	cout << "Select Target: ";
 	cout << "X";
-	cin >> in2;
+	cin >> x;
 	cout << "y";
+	cin >> y;
 	
-	Item it = new Item(in , in2);
+	Item it = new Item(x , y);
 
 	auto fIt = std::find(items.begin(), items.end() , it);
 	if(fIt != items.end() ) {
